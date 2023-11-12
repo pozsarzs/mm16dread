@@ -31,14 +31,26 @@ type
     Bevel3: TBevel;
     Bevel4: TBevel;
     Bevel5: TBevel;
+    Bevel6: TBevel;
     Button7: TButton;
     CheckBox1: TCheckBox;
     ComboBox1: TComboBox;
     Label1: TLabel;
     Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
     Label17: TLabel;
     Label18: TLabel;
+    Label19: TLabel;
     Label2: TLabel;
+    Label20: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
@@ -50,11 +62,23 @@ type
     PageControl1: TPageControl;
     Process1: TProcess;
     Shape1: TShape;
+    Shape10: TShape;
+    Shape11: TShape;
+    Shape12: TShape;
+    Shape13: TShape;
+    Shape14: TShape;
     Shape15: TShape;
+    Shape16: TShape;
+    Shape17: TShape;
+    Shape18: TShape;
     Shape2: TShape;
     Shape3: TShape;
     Shape4: TShape;
     Shape5: TShape;
+    Shape6: TShape;
+    Shape7: TShape;
+    Shape8: TShape;
+    Shape9: TShape;
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
     StatusBar1: TStatusBar;
@@ -133,7 +157,7 @@ resourcestring
   MESSAGE39 = 'growing hyphae operation mode';
   MESSAGE40 = 'growing mushroom operation mode';
   MESSAGE41 = 'manual switch (0/1: auto/manual)';
-  MESSAGE42 = 'nable lamp output';
+  MESSAGE42 = 'enable lamp output';
   MESSAGE43 = 'enable ventilator output';
   MESSAGE44 = 'enable heater output';
   MESSAGE45 = 'status of the lamp output';
@@ -311,7 +335,9 @@ begin
         Value.Strings[i] := rmchr1(Value.Strings[i]);
         if (k = 9) or (k = 17) or (k = 19) or (k = 21) or (k = 23) then
         begin
-          ValueListEditor1.Cells[1, k - 1 - l] := ValueListEditor1.Cells[1, k - 1 - l] + ' ' + Value.Strings[i];
+          ValueListEditor1.Cells[1, k - 1 - l] :=
+            word2bs(Value.Strings[i].ToInteger,8) +
+            word2bs(ValueListEditor1.Cells[1, k - 1 - l].ToInteger,16);
           inc(l);
         end else
           ValueListEditor1.Cells[1, k-l] := Value.Strings[i];
@@ -322,6 +348,7 @@ begin
     ShowMessage(MESSAGE03);
     exit;
   end;
+  ValueListEditor1.Cells[1,7] := word2bs(ValueListEditor1.Cells[1,7].ToInteger,3);
   // K -> °C
   for i := 0 to 3 do
     ValueListEditor1.Cells[1, 9 + i] := inttostr(ValueListEditor1.Cells[1, 9 + i].ToInteger - 273);
@@ -334,6 +361,7 @@ begin
   Label4.Caption := ValueListEditor1.Cells[1, 32] + ' °C';
   Label18.Caption := ValueListEditor1.Cells[1, 33] + ' °C';
   // LEDs
+  // MM17D
   if ValueListEditor1.Cells[1, 53].ToBoolean
   then
     Shape3.Brush.Color:=clLime
@@ -349,6 +377,75 @@ begin
     Shape5.Brush.Color:=clRed
   else
     Shape5.Brush.Color:=clMaroon;
+  // MM16D
+  // status, NTP, MM17D
+  if ValueListEditor1.Cells[1, 34].ToBoolean
+  then
+    Shape12.Brush.Color:=clRed
+  else
+    Shape12.Brush.Color:=clLime;
+  if ValueListEditor1.Cells[1, 37].ToBoolean
+  then
+    Shape13.Brush.Color:=clRed
+  else
+    Shape13.Brush.Color:=clMaroon;
+  if ValueListEditor1.Cells[1, 38].ToBoolean
+  then
+    Shape14.Brush.Color:=clRed
+  else
+    Shape14.Brush.Color:=clMaroon;
+  // manual, alarm, breaker
+  if ValueListEditor1.Cells[1, 42].ToBoolean
+  then
+    Shape18.Brush.Color:=clYellow
+  else
+    Shape18.Brush.Color:=clOlive;
+  if ValueListEditor1.Cells[1, 35].ToBoolean
+  then
+    Shape17.Brush.Color:=clRed
+  else
+    Shape17.Brush.Color:=clMaroon;
+  if ValueListEditor1.Cells[1, 36].ToBoolean
+  then
+    Shape16.Brush.Color:=clRed
+  else
+    Shape16.Brush.Color:=clMaroon;
+  // ENA lamp, fan, heater
+  if ValueListEditor1.Cells[1, 43].ToBoolean
+  then
+    Shape6.Brush.Color:=clLime
+  else
+    Shape6.Brush.Color:=clGreen;
+  if ValueListEditor1.Cells[1, 44].ToBoolean
+  then
+    Shape7.Brush.Color:=clLime
+  else
+    Shape7.Brush.Color:=clGreen;
+  if ValueListEditor1.Cells[1, 45].ToBoolean
+  then
+    Shape8.Brush.Color:=clLime
+  else
+    Shape8.Brush.Color:=clGreen;
+  // ON lamp, fan, heater
+  if ValueListEditor1.Cells[1, 46].ToBoolean
+  then
+    Shape10.Brush.Color:=clLime
+  else
+    Shape10.Brush.Color:=clGreen;
+  if ValueListEditor1.Cells[1, 47].ToBoolean
+  then
+    Shape11.Brush.Color:=clLime
+  else
+    Shape11.Brush.Color:=clGreen;
+  if ValueListEditor1.Cells[1, 48].ToBoolean
+  then
+    Shape9.Brush.Color:=clLime
+  else
+    Shape9.Brush.Color:=clGreen;
+  // operation mode
+  if ValueListEditor1.Cells[1, 39].ToBoolean then StatusBar1.Panels.Items[1].Text := MESSAGE38;
+  if ValueListEditor1.Cells[1, 40].ToBoolean then StatusBar1.Panels.Items[1].Text := MESSAGE39;
+  if ValueListEditor1.Cells[1, 41].ToBoolean then StatusBar1.Panels.Items[1].Text := MESSAGE40;
   ValueListEditor1.Cells[0, 0] := MESSAGE05;
   ValueListEditor1.Cells[1, 0] := MESSAGE06;
   // get log

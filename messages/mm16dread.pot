@@ -74,7 +74,6 @@ msgid "maximum temperature [°C]"
 msgstr ""
 
 #: frmmain.message19
-msgctxt "frmmain.message19"
 msgid "minimum humidity [%]"
 msgstr ""
 
@@ -135,6 +134,7 @@ msgid "sign lights (0/1: red/green)"
 msgstr ""
 
 #: frmmain.message34
+msgctxt "frmmain.message34"
 msgid "alarm"
 msgstr ""
 
@@ -167,7 +167,7 @@ msgid "manual switch (0/1: auto/manual)"
 msgstr ""
 
 #: frmmain.message42
-msgid "nable lamp output"
+msgid "enable lamp output"
 msgstr ""
 
 #: frmmain.message43
@@ -219,7 +219,6 @@ msgid "MM17D red LED"
 msgstr ""
 
 #: frmmain.message55
-msgctxt "frmmain.message55"
 msgid "Cannot run default webbrowser!"
 msgstr ""
 
@@ -247,6 +246,35 @@ msgstr ""
 msgid "Internal relative humidity"
 msgstr ""
 
+#: tform1.label10.caption
+msgid "MM16D"
+msgstr ""
+
+#: tform1.label11.caption
+msgid "ON"
+msgstr ""
+
+#: tform1.label12.caption
+msgid "ENA"
+msgstr ""
+
+#: tform1.label13.caption
+msgid "lamp"
+msgstr ""
+
+#: tform1.label14.caption
+msgid "fan"
+msgstr ""
+
+#: tform1.label15.caption
+msgid "heater"
+msgstr ""
+
+#: tform1.label16.caption
+msgctxt "tform1.label16.caption"
+msgid "MM17D"
+msgstr ""
+
 #: tform1.label17.caption
 msgid "External temperature"
 msgstr ""
@@ -256,8 +284,29 @@ msgctxt "tform1.label18.caption"
 msgid "0 °C"
 msgstr ""
 
+#: tform1.label19.caption
+msgctxt "tform1.label19.caption"
+msgid "alarm"
+msgstr ""
+
 #: tform1.label2.caption
 msgid "Internal temperature"
+msgstr ""
+
+#: tform1.label20.caption
+msgid "manual"
+msgstr ""
+
+#: tform1.label23.caption
+msgid "status"
+msgstr ""
+
+#: tform1.label24.caption
+msgid "breaker"
+msgstr ""
+
+#: tform1.label25.caption
+msgid "NTP"
 msgstr ""
 
 #: tform1.label3.caption
@@ -270,6 +319,7 @@ msgid "0 °C"
 msgstr ""
 
 #: tform1.label5.caption
+msgctxt "tform1.label5.caption"
 msgid "MM17D"
 msgstr ""
 

@@ -1,14 +1,14 @@
 object Form1: TForm1
-  Left = 282
+  Left = 291
   Height = 336
-  Top = 207
-  Width = 604
+  Top = 162
+  Width = 676
   ActiveControl = ComboBox1
   Caption = 'Form1'
   ClientHeight = 336
-  ClientWidth = 604
+  ClientWidth = 676
   Constraints.MinHeight = 336
-  Constraints.MinWidth = 604
+  Constraints.MinWidth = 676
   Icon.Data = {
     BE0800000000010001002020000001000800A808000016000000280000002000
     0000400000000100080000000000000000000000000000000000000000000000
@@ -94,7 +94,7 @@ object Form1: TForm1
     Height = 28
     Hint = 'URL'
     Top = 4
-    Width = 542
+    Width = 614
     Anchors = [akTop, akLeft, akRight]
     AutoComplete = True
     AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
@@ -111,17 +111,21 @@ object Form1: TForm1
     Left = 0
     Height = 20
     Top = 316
-    Width = 604
+    Width = 676
     Panels = <    
       item
-        Width = 200
+        Width = 130
+      end    
+      item
+        Alignment = taRightJustify
+        Width = 300
       end>
     SimplePanel = False
   end
   object SpeedButton2: TSpeedButton
     AnchorSideTop.Control = ComboBox1
     AnchorSideRight.Control = SpeedButton3
-    Left = 550
+    Left = 622
     Height = 22
     Hint = 'Add URL to list'
     Top = 8
@@ -175,7 +179,7 @@ object Form1: TForm1
     AnchorSideTop.Control = ComboBox1
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 577
+    Left = 649
     Height = 22
     Hint = 'Remove URL from list'
     Top = 8
@@ -235,7 +239,7 @@ object Form1: TForm1
     Left = 4
     Height = 236
     Top = 36
-    Width = 596
+    Width = 668
     ActivePage = TabSheet1
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Left = 4
@@ -247,7 +251,23 @@ object Form1: TForm1
     object TabSheet1: TTabSheet
       Caption = 'Measured values'
       ClientHeight = 201
-      ClientWidth = 590
+      ClientWidth = 662
+      object Bevel1: TBevel
+        AnchorSideLeft.Control = Bevel2
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = CheckBox1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Bevel16
+        AnchorSideBottom.Side = asrBottom
+        Left = 208
+        Height = 161
+        Top = 30
+        Width = 450
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Around = 4
+      end
       object Shape2: TShape
         AnchorSideLeft.Control = Bevel3
         AnchorSideTop.Control = Bevel3
@@ -405,6 +425,7 @@ object Form1: TForm1
         AnchorSideLeft.Control = Bevel16
         AnchorSideLeft.Side = asrCenter
         AnchorSideTop.Control = Bevel16
+        AnchorSideRight.Control = Shape16
         Left = 81
         Height = 22
         Top = 157
@@ -433,80 +454,440 @@ object Form1: TForm1
         ShowHint = True
         TabOrder = 0
       end
-      object Bevel1: TBevel
-        AnchorSideLeft.Control = Bevel2
-        AnchorSideLeft.Side = asrBottom
-        AnchorSideTop.Control = CheckBox1
-        AnchorSideTop.Side = asrBottom
-        AnchorSideRight.Control = TabSheet1
-        AnchorSideRight.Side = asrBottom
-        AnchorSideBottom.Control = Bevel16
-        AnchorSideBottom.Side = asrBottom
-        Left = 208
-        Height = 161
-        Top = 30
-        Width = 378
-        Anchors = [akTop, akLeft, akRight, akBottom]
-        BorderSpacing.Around = 4
-      end
       object Shape3: TShape
+        AnchorSideLeft.Control = Bevel1
+        AnchorSideTop.Control = Bevel1
         Left = 224
         Height = 25
-        Top = 48
+        Top = 46
         Width = 35
+        BorderSpacing.Around = 16
         Brush.Color = clGreen
         ParentShowHint = False
         Pen.Width = 2
         Shape = stCircle
       end
       object Shape4: TShape
+        AnchorSideLeft.Control = Bevel1
+        AnchorSideTop.Control = Shape3
+        AnchorSideTop.Side = asrBottom
         Left = 224
         Height = 25
-        Top = 88
+        Top = 87
         Width = 35
+        BorderSpacing.Around = 16
         Brush.Color = clOlive
         ParentShowHint = False
         Pen.Width = 2
         Shape = stCircle
       end
       object Shape5: TShape
+        AnchorSideLeft.Control = Bevel1
+        AnchorSideTop.Control = Shape4
+        AnchorSideTop.Side = asrBottom
         Left = 224
         Height = 25
         Top = 128
         Width = 35
+        BorderSpacing.Around = 16
         Brush.Color = clMaroon
         ParentShowHint = False
         Pen.Width = 2
         Shape = stCircle
       end
       object Label5: TLabel
-        Left = 216
+        AnchorSideLeft.Control = Shape3
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideBottom.Control = Bevel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 214
         Height = 15
         Top = 168
-        Width = 50
+        Width = 55
+        Alignment = taCenter
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
         Caption = 'MM17D'
+        Font.Style = [fsBold]
         ParentColor = False
+        ParentFont = False
       end
       object Bevel5: TBevel
-        Left = 272
-        Height = 142
-        Top = 40
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Bevel1
+        AnchorSideBottom.Control = Bevel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 275
+        Height = 157
+        Top = 32
         Width = 8
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Around = 2
         Shape = bsLeftLine
       end
       object Label10: TLabel
-        Left = 280
+        Left = 288
         Height = 15
         Top = 168
-        Width = 50
+        Width = 55
         Caption = 'MM16D'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape8: TShape
+        AnchorSideTop.Control = Shape5
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape10
+        Left = 560
+        Height = 25
+        Top = 128
+        Width = 40
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape6: TShape
+        AnchorSideTop.Control = Shape3
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape10
+        Left = 560
+        Height = 25
+        Top = 46
+        Width = 40
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape7: TShape
+        AnchorSideTop.Control = Shape4
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape10
+        Left = 560
+        Height = 25
+        Top = 87
+        Width = 40
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape9: TShape
+        AnchorSideTop.Control = Shape5
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel1
+        AnchorSideRight.Side = asrBottom
+        Left = 616
+        Height = 25
+        Top = 128
+        Width = 26
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape10: TShape
+        AnchorSideTop.Control = Shape3
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel1
+        AnchorSideRight.Side = asrBottom
+        Left = 616
+        Height = 25
+        Top = 46
+        Width = 26
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape11: TShape
+        AnchorSideTop.Control = Shape4
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel1
+        AnchorSideRight.Side = asrBottom
+        Left = 616
+        Height = 25
+        Top = 87
+        Width = 26
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 16
+        Brush.Color = clGreen
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape12: TShape
+        AnchorSideLeft.Control = Bevel5
+        AnchorSideTop.Control = Shape3
+        AnchorSideTop.Side = asrCenter
+        Left = 291
+        Height = 25
+        Top = 46
+        Width = 35
+        BorderSpacing.Left = 16
+        Brush.Color = clGray
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape13: TShape
+        AnchorSideLeft.Control = Bevel5
+        AnchorSideTop.Control = Shape4
+        AnchorSideTop.Side = asrCenter
+        Left = 291
+        Height = 25
+        Top = 87
+        Width = 35
+        BorderSpacing.Left = 16
+        Brush.Color = clMaroon
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape14: TShape
+        AnchorSideLeft.Control = Bevel5
+        AnchorSideTop.Control = Shape5
+        AnchorSideTop.Side = asrCenter
+        Left = 291
+        Height = 25
+        Top = 128
+        Width = 35
+        BorderSpacing.Left = 16
+        Brush.Color = clMaroon
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape16: TShape
+        AnchorSideTop.Control = Shape5
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel6
+        Left = 453
+        Height = 25
+        Top = 128
+        Width = 35
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clMaroon
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape17: TShape
+        AnchorSideTop.Control = Shape4
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel6
+        Left = 453
+        Height = 25
+        Top = 87
+        Width = 35
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clMaroon
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Shape18: TShape
+        AnchorSideTop.Control = Shape3
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Bevel6
+        Left = 453
+        Height = 25
+        Top = 46
+        Width = 35
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 16
+        Brush.Color = clOlive
+        ParentShowHint = False
+        Pen.Width = 2
+        Shape = stCircle
+      end
+      object Label11: TLabel
+        AnchorSideLeft.Control = Shape9
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideBottom.Control = Bevel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 619
+        Height = 15
+        Top = 168
+        Width = 21
+        Alignment = taCenter
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
+        Caption = 'ON'
+        ParentColor = False
+      end
+      object Label12: TLabel
+        AnchorSideLeft.Control = Shape8
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideBottom.Control = Bevel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 567
+        Height = 15
+        Top = 168
+        Width = 27
+        Alignment = taCenter
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
+        Caption = 'ENA'
+        ParentColor = False
+      end
+      object Label13: TLabel
+        AnchorSideTop.Control = Shape6
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape6
+        Left = 519
+        Height = 15
+        Top = 51
+        Width = 33
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'lamp'
+        ParentColor = False
+      end
+      object Label14: TLabel
+        AnchorSideTop.Control = Shape7
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape6
+        Left = 531
+        Height = 15
+        Top = 92
+        Width = 21
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'fan'
+        ParentColor = False
+      end
+      object Label15: TLabel
+        AnchorSideTop.Control = Shape8
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape6
+        Left = 510
+        Height = 15
+        Top = 133
+        Width = 42
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'heater'
+        ParentColor = False
+      end
+      object Bevel6: TBevel
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Bevel1
+        AnchorSideBottom.Control = Bevel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 504
+        Height = 136
+        Top = 30
+        Width = 8
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Bottom = 25
+        Shape = bsLeftLine
+      end
+      object Label16: TLabel
+        AnchorSideLeft.Control = Shape12
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Shape8
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape16
+        Left = 334
+        Height = 15
+        Top = 133
+        Width = 50
+        BorderSpacing.Left = 8
+        Caption = 'MM17D'
+        ParentColor = False
+      end
+      object Label19: TLabel
+        AnchorSideTop.Control = Shape7
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape17
+        Left = 407
+        Height = 15
+        Top = 92
+        Width = 38
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'alarm'
+        ParentColor = False
+      end
+      object Label20: TLabel
+        AnchorSideTop.Control = Shape6
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape18
+        Left = 396
+        Height = 15
+        Top = 51
+        Width = 49
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'manual'
+        ParentColor = False
+      end
+      object Label23: TLabel
+        AnchorSideLeft.Control = Shape12
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Shape6
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape18
+        Left = 334
+        Height = 15
+        Top = 51
+        Width = 40
+        BorderSpacing.Left = 8
+        Caption = 'status'
+        ParentColor = False
+      end
+      object Label24: TLabel
+        AnchorSideTop.Control = Shape16
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = Shape17
+        Left = 396
+        Height = 15
+        Top = 133
+        Width = 49
+        Alignment = taRightJustify
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
+        Caption = 'breaker'
+        ParentColor = False
+      end
+      object Label25: TLabel
+        AnchorSideLeft.Control = Shape13
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Shape13
+        AnchorSideTop.Side = asrCenter
+        Left = 334
+        Height = 15
+        Top = 92
+        Width = 26
+        BorderSpacing.Left = 8
+        Caption = 'NTP'
         ParentColor = False
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'Summary'
       ClientHeight = 201
-      ClientWidth = 590
+      ClientWidth = 662
       object ValueListEditor1: TValueListEditor
         AnchorSideLeft.Control = TabSheet2
         AnchorSideTop.Control = TabSheet2
@@ -515,9 +896,9 @@ object Form1: TForm1
         AnchorSideBottom.Control = TabSheet2
         AnchorSideBottom.Side = asrBottom
         Left = 4
-        Height = 205
+        Height = 193
         Top = 4
-        Width = 582
+        Width = 654
         Anchors = [akTop, akLeft, akRight, akBottom]
         BorderSpacing.Around = 4
         DefaultColWidth = 0
@@ -584,14 +965,14 @@ object Form1: TForm1
         )
         ColWidths = (
           170
-          392
+          480
         )
       end
     end
     object TabSheet3: TTabSheet
       Caption = 'System log'
       ClientHeight = 201
-      ClientWidth = 590
+      ClientWidth = 662
       object Memo1: TMemo
         AnchorSideLeft.Control = TabSheet3
         AnchorSideTop.Control = TabSheet3
@@ -602,7 +983,7 @@ object Form1: TForm1
         Left = 0
         Height = 201
         Top = 0
-        Width = 276
+        Width = 662
         Anchors = [akTop, akLeft, akRight, akBottom]
         HideSelection = False
         ReadOnly = True
@@ -614,7 +995,7 @@ object Form1: TForm1
     object TabSheet4: TTabSheet
       Caption = 'About'
       ClientHeight = 201
-      ClientWidth = 590
+      ClientWidth = 662
       object Bevel4: TBevel
         AnchorSideLeft.Control = TabSheet4
         AnchorSideTop.Control = TabSheet4
@@ -623,16 +1004,16 @@ object Form1: TForm1
         AnchorSideBottom.Control = TabSheet4
         AnchorSideBottom.Side = asrBottom
         Left = 4
-        Height = 205
+        Height = 193
         Top = 4
-        Width = 582
+        Width = 654
         Anchors = [akTop, akLeft, akRight, akBottom]
         BorderSpacing.Around = 4
       end
       object Label6: TLabel
         AnchorSideLeft.Control = TabSheet4
         AnchorSideLeft.Side = asrCenter
-        Left = 270
+        Left = 306
         Height = 15
         Top = 32
         Width = 51
@@ -648,7 +1029,7 @@ object Form1: TForm1
         Left = 16
         Height = 15
         Top = 56
-        Width = 558
+        Width = 630
         Alignment = taCenter
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 16
@@ -660,7 +1041,7 @@ object Form1: TForm1
       object Label8: TLabel
         AnchorSideLeft.Control = TabSheet4
         AnchorSideLeft.Side = asrCenter
-        Left = 228
+        Left = 264
         Height = 15
         Top = 128
         Width = 135
@@ -671,7 +1052,7 @@ object Form1: TForm1
         AnchorSideLeft.Control = TabSheet4
         AnchorSideLeft.Side = asrCenter
         Cursor = crHandPoint
-        Left = 220
+        Left = 256
         Height = 15
         Top = 152
         Width = 151
@@ -695,7 +1076,7 @@ object Form1: TForm1
     Left = 4
     Height = 36
     Top = 276
-    Width = 596
+    Width = 668
     Anchors = [akLeft, akRight, akBottom]
     BorderSpacing.Around = 4
     Caption = '&Refresh displays'
@@ -716,13 +1097,13 @@ object Form1: TForm1
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 8
-    Top = 304
+    Left = 600
+    Top = 72
   end
   object Timer1: TTimer
     Enabled = False
     OnTimer = Timer1Timer
-    Left = 40
-    Top = 304
+    Left = 632
+    Top = 72
   end
 end

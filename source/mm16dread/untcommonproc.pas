@@ -41,6 +41,7 @@ const
   {$I config.pas.in}
 {$ENDIF}
 
+function word2bs(myNum: word; NumberOfBits: byte): string;
 function rmchr1(input: string): string;
 function rmchr3(input: string): string;
 function getdatafromdevice(url: string; cmd: byte): boolean;
@@ -57,6 +58,27 @@ function SHGetFolderPath(hwndOwner: HWND; nFolder: integer; hToken: THandle;
 {$ENDIF}
 
 implementation
+
+// convert uint16_t to String in binary format
+function word2bs(myNum: word; NumberOfBits: byte): string;
+var
+  i: integer;
+  s: string;
+begin
+  s:='';
+  if (NumberOfBits <= 16) then
+  begin
+    myNum := myNum shl (16 - NumberOfBits);
+    for i := 0 to NumberOfBits-1 do
+    begin
+      if odd(myNum shr 15) = true
+        then s := s+ '1'
+        else s := s+ '0';
+      myNum := myNum shl 1;
+    end;
+  end;
+  result := s;
+end;
 
 // Remove all space and tabulator
 function rmchr1(input: string): string;
