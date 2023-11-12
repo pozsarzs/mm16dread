@@ -1,0 +1,315 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: frmmain.message01
+msgid "Cannot read configuration file!"
+msgstr ""
+
+#: frmmain.message02
+msgid "Cannot write configuration file!"
+msgstr ""
+
+#: frmmain.message03
+msgid "Cannot read data from this URL!"
+msgstr ""
+
+#: frmmain.message04
+msgid "Not compatible controller!"
+msgstr ""
+
+#: frmmain.message05
+msgid "name"
+msgstr ""
+
+#: frmmain.message06
+msgid "value"
+msgstr ""
+
+#: frmmain.message07
+msgid "device"
+msgstr ""
+
+#: frmmain.message08
+msgid "software version"
+msgstr ""
+
+#: frmmain.message09
+msgid "MAC address"
+msgstr ""
+
+#: frmmain.message10
+msgid "IP address"
+msgstr ""
+
+#: frmmain.message11
+msgid "Modbus/RTU client UID"
+msgstr ""
+
+#: frmmain.message12
+msgid "serial port speed [baud]"
+msgstr ""
+
+#: frmmain.message13
+msgid "enable/disable channels"
+msgstr ""
+
+#: frmmain.message14
+msgid "time-dependent heating prohibition [h]"
+msgstr ""
+
+#: frmmain.message15
+msgid "heating switch-on temperature [°C]"
+msgstr ""
+
+#: frmmain.message16
+msgid "heating switch-off temperature [°C]"
+msgstr ""
+
+#: frmmain.message17
+msgid "minimum temperature [°C]"
+msgstr ""
+
+#: frmmain.message18
+msgid "maximum temperature [°C]"
+msgstr ""
+
+#: frmmain.message19
+msgctxt "frmmain.message19"
+msgid "minimum humidity [%]"
+msgstr ""
+
+#: frmmain.message20
+msgid "maximum humidity [%]"
+msgstr ""
+
+#: frmmain.message21
+msgid "time-dependent ventilation prohibition [h]"
+msgstr ""
+
+#: frmmain.message22
+msgid "high ext. temp. and time-dependent ventilation prohibition [h]"
+msgstr ""
+
+#: frmmain.message23
+msgid "low ext. temp. and time-dependent ventilation prohibition [h]"
+msgstr ""
+
+#: frmmain.message24
+msgid "external temperature upper limit [°C]"
+msgstr ""
+
+#: frmmain.message25
+msgid "external temperature lower limit [°C]"
+msgstr ""
+
+#: frmmain.message26
+msgid "lighting switch-on [h]"
+msgstr ""
+
+#: frmmain.message27
+msgid "lighting switch-off [h]"
+msgstr ""
+
+#: frmmain.message28
+msgid "ventilating switch-on [m]"
+msgstr ""
+
+#: frmmain.message29
+msgid "ventilating switch-off [m]"
+msgstr ""
+
+#: frmmain.message30
+msgid "MM17D internal relative humidity [%]"
+msgstr ""
+
+#: frmmain.message31
+msgid "MM17D internal temperature [°C]"
+msgstr ""
+
+#: frmmain.message32
+msgid "MM17D external temperature [°C]"
+msgstr ""
+
+#: frmmain.message33
+msgid "sign lights (0/1: red/green)"
+msgstr ""
+
+#: frmmain.message34
+msgid "alarm"
+msgstr ""
+
+#: frmmain.message35
+msgid "overcurrent breaker (1: error)"
+msgstr ""
+
+#: frmmain.message36
+msgid "no connection to the NTP server (1: error)"
+msgstr ""
+
+#: frmmain.message37
+msgid "no connection to the MM17D (1: error)"
+msgstr ""
+
+#: frmmain.message38
+msgid "stand-by operation mode"
+msgstr ""
+
+#: frmmain.message39
+msgid "growing hyphae operation mode"
+msgstr ""
+
+#: frmmain.message40
+msgid "growing mushroom operation mode"
+msgstr ""
+
+#: frmmain.message41
+msgid "manual switch (0/1: auto/manual)"
+msgstr ""
+
+#: frmmain.message42
+msgid "nable lamp output"
+msgstr ""
+
+#: frmmain.message43
+msgid "enable ventilator output"
+msgstr ""
+
+#: frmmain.message44
+msgid "enable heater output"
+msgstr ""
+
+#: frmmain.message45
+msgid "status of the lamp output"
+msgstr ""
+
+#: frmmain.message46
+msgid "status of the ventilator output"
+msgstr ""
+
+#: frmmain.message47
+msgid "status of the heater output"
+msgstr ""
+
+#: frmmain.message48
+msgid "internal humidity is less than requied"
+msgstr ""
+
+#: frmmain.message49
+msgid "internal humidity is more than requied"
+msgstr ""
+
+#: frmmain.message50
+msgid "internal temperature is less than requied"
+msgstr ""
+
+#: frmmain.message51
+msgid "internal temperature is more than requied"
+msgstr ""
+
+#: frmmain.message52
+msgid "MM17D green LED"
+msgstr ""
+
+#: frmmain.message53
+msgid "MM17D yellow LED"
+msgstr ""
+
+#: frmmain.message54
+msgid "MM17D red LED"
+msgstr ""
+
+#: frmmain.message55
+msgctxt "frmmain.message55"
+msgid "Cannot run default webbrowser!"
+msgstr ""
+
+#: tform1.button7.caption
+msgid "&Refresh displays"
+msgstr ""
+
+#: tform1.caption
+msgid "Form1"
+msgstr ""
+
+#: tform1.checkbox1.caption
+msgid "auto"
+msgstr ""
+
+#: tform1.checkbox1.hint
+msgid "Automatic device read"
+msgstr ""
+
+#: tform1.combobox1.hint
+msgid "URL"
+msgstr ""
+
+#: tform1.label1.caption
+msgid "Internal relative humidity"
+msgstr ""
+
+#: tform1.label17.caption
+msgid "External temperature"
+msgstr ""
+
+#: tform1.label18.caption
+msgctxt "tform1.label18.caption"
+msgid "0 °C"
+msgstr ""
+
+#: tform1.label2.caption
+msgid "Internal temperature"
+msgstr ""
+
+#: tform1.label3.caption
+msgid "0 %"
+msgstr ""
+
+#: tform1.label4.caption
+msgctxt "tform1.label4.caption"
+msgid "0 °C"
+msgstr ""
+
+#: tform1.label5.caption
+msgid "MM17D"
+msgstr ""
+
+#: tform1.label6.caption
+msgid "Label6"
+msgstr ""
+
+#: tform1.label7.caption
+msgid "Status reader program for MM16D device"
+msgstr ""
+
+#: tform1.label8.caption
+msgid "(C)2023 Pozsár Zsolt"
+msgstr ""
+
+#: tform1.label9.caption
+msgid "http://www.pozsarzs.hu"
+msgstr ""
+
+#: tform1.speedbutton2.hint
+msgid "Add URL to list"
+msgstr ""
+
+#: tform1.speedbutton3.hint
+msgid "Remove URL from list"
+msgstr ""
+
+#: tform1.tabsheet1.caption
+msgid "Measured values"
+msgstr ""
+
+#: tform1.tabsheet2.caption
+msgid "Summary"
+msgstr ""
+
+#: tform1.tabsheet3.caption
+msgid "System log"
+msgstr ""
+
+#: tform1.tabsheet4.caption
+msgid "About"
+msgstr ""
+
