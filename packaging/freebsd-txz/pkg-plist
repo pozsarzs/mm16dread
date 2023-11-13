@@ -1,0 +1,16 @@
+bin/mm16dread
+bin/mm16dread-http
+bin/mm16dread-modbus-tcp
+man/man1/mm16dread.1
+man/man1/mm16dread-http.1
+man/man1/mm16dread-modbus-tcp.1
+share/applications/mm16dread.desktop
+share/doc/mm16dread/AUTHORS
+share/doc/mm16dread/changelog
+share/doc/mm16dread/copyright
+share/doc/mm16dread/INSTALL
+share/doc/mm16dread/LICENCE
+share/doc/mm16dread/README
+share/doc/mm16dread/VERSION
+share/locale/hu/mm16dread.mo
+share/pixmaps/mm16dread.xpm

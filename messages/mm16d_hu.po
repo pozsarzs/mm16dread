@@ -1,242 +1,243 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ../..\n"
+"Last-Translator: Pozsár Zsolt <pozsarzs@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: frmmain.message01
 msgid "Cannot read configuration file!"
-msgstr ""
+msgstr "A beállításfájl nem olvasható!"
 
 #: frmmain.message02
 msgid "Cannot write configuration file!"
-msgstr ""
+msgstr "A beállításfájl nem írható!"
 
 #: frmmain.message03
 msgid "Cannot read data from this URL!"
-msgstr ""
+msgstr "Nem tudok adatokat beolvasni erről az URL-ről!"
 
 #: frmmain.message04
 msgid "Not compatible controller!"
-msgstr ""
+msgstr "Nem kompatibilis vezérlő!"
 
 #: frmmain.message05
 msgid "name"
-msgstr ""
+msgstr "név"
 
 #: frmmain.message06
 msgid "value"
-msgstr ""
+msgstr "érték"
 
 #: frmmain.message07
 msgid "device"
-msgstr ""
+msgstr "eszköz"
 
 #: frmmain.message08
 msgid "software version"
-msgstr ""
+msgstr "szoftververzió"
 
 #: frmmain.message09
 msgid "MAC address"
-msgstr ""
+msgstr "MAC cím"
 
 #: frmmain.message10
 msgid "IP address"
-msgstr ""
+msgstr "IP cím"
 
 #: frmmain.message11
 msgid "Modbus/RTU client UID"
-msgstr ""
+msgstr "Modbus/RTU kliens UID"
 
 #: frmmain.message12
 msgid "serial port speed [baud]"
-msgstr ""
+msgstr "soros port sebesség [baud]"
 
 #: frmmain.message13
 msgid "enable/disable channels"
-msgstr ""
+msgstr "csatornák engedélyezése/tiltása"
 
 #: frmmain.message14
 msgid "time-dependent heating prohibition [h]"
-msgstr ""
+msgstr "időzített fűtés tiltás [h]"
 
 #: frmmain.message15
 msgid "heating switch-on temperature [°C]"
-msgstr ""
+msgstr "fűtés bekapcsolási hőmérséklet [°C]"
 
 #: frmmain.message16
 msgid "heating switch-off temperature [°C]"
-msgstr ""
+msgstr "fűtés kikapcsolási hőmérséklet [°C]"
 
 #: frmmain.message17
 msgid "minimum temperature [°C]"
-msgstr ""
+msgstr "minimum hőmérséklet [°C]"
 
 #: frmmain.message18
 msgid "maximum temperature [°C]"
-msgstr ""
+msgstr "maximum hőmérséklet [°C]"
 
 #: frmmain.message19
 msgid "minimum humidity [%]"
-msgstr ""
+msgstr "minimum páratartalom [%]"
 
 #: frmmain.message20
 msgid "maximum humidity [%]"
-msgstr ""
+msgstr "maximum páratartalom [%]"
 
 #: frmmain.message21
 msgid "time-dependent ventilation prohibition [h]"
-msgstr ""
+msgstr "időzített szellőztetés tiltás [h]"
 
 #: frmmain.message22
 msgid "high ext. temp. and time-dependent ventilation prohibition [h]"
-msgstr ""
+msgstr "magas külső hőm. és időzített szellőztetés tiltás [h]"
 
 #: frmmain.message23
 msgid "low ext. temp. and time-dependent ventilation prohibition [h]"
-msgstr ""
+msgstr "alacsony külső hőm. és időzített szellőztetés tiltás [h]"
 
 #: frmmain.message24
 msgid "external temperature upper limit [°C]"
-msgstr ""
+msgstr "külső hőmérséklet felső határérték [°C]"
 
 #: frmmain.message25
 msgid "external temperature lower limit [°C]"
-msgstr ""
+msgstr "külső hőmérséklet alsó határérték [°C]"
 
 #: frmmain.message26
 msgid "lighting switch-on [h]"
-msgstr ""
+msgstr "világítás bekapcsolás [h]"
 
 #: frmmain.message27
 msgid "lighting switch-off [h]"
-msgstr ""
+msgstr "világítás kikapcsolás [h]"
 
 #: frmmain.message28
 msgid "ventilating switch-on [m]"
-msgstr ""
+msgstr "szellőztetés bekapcsolás [m]"
 
 #: frmmain.message29
 msgid "ventilating switch-off [m]"
-msgstr ""
+msgstr "szellőztetés kikapcsolás [m]"
 
 #: frmmain.message30
 msgid "MM17D internal relative humidity [%]"
-msgstr ""
+msgstr "MM17D belső relatív páratartalom [%]"
 
 #: frmmain.message31
 msgid "MM17D internal temperature [°C]"
-msgstr ""
+msgstr "MM17D belső hőmérséklet [°C]"
 
 #: frmmain.message32
 msgid "MM17D external temperature [°C]"
-msgstr ""
+msgstr "MM17D külső hőmérséklet [°C]"
 
 #: frmmain.message33
 msgid "sign lights (0/1: red/green)"
-msgstr ""
+msgstr "jelzőfények (0/1: piros/zöld)"
 
 #: frmmain.message34
 msgctxt "frmmain.message34"
 msgid "alarm"
-msgstr ""
+msgstr "riasztó"
 
 #: frmmain.message35
 msgid "overcurrent breaker (1: error)"
-msgstr ""
+msgstr "túláramvédelem (1: hiba)"
 
 #: frmmain.message36
 msgid "no connection to the NTP server (1: error)"
-msgstr ""
+msgstr "nincs kapcsolat az NTP kiszolgálóval (1: hiba)"
 
 #: frmmain.message37
 msgid "no connection to the MM17D (1: error)"
-msgstr ""
+msgstr "nincs kapcsolat az MM17D eszközzel (1: hiba)"
 
 #: frmmain.message38
 msgid "stand-by operation mode"
-msgstr ""
+msgstr "készenlét"
 
 #: frmmain.message39
 msgid "growing hyphae operation mode"
-msgstr ""
+msgstr "átszövetés"
 
 #: frmmain.message40
 msgid "growing mushroom operation mode"
-msgstr ""
+msgstr "gombatermesztés"
 
 #: frmmain.message41
 msgid "manual switch (0/1: auto/manual)"
-msgstr ""
+msgstr "kézi üzemmód kapcsoló (0/1: auto/kézi)"
 
 #: frmmain.message42
 msgid "enable lamp output"
-msgstr ""
+msgstr "lámpa kimenet engedélyezés"
 
 #: frmmain.message43
 msgid "enable ventilator output"
-msgstr ""
+msgstr "ventilátor kimenet engedélyezés"
 
 #: frmmain.message44
 msgid "enable heater output"
-msgstr ""
+msgstr "fűtés kimenet engedélyezés"
 
 #: frmmain.message45
 msgid "status of the lamp output"
-msgstr ""
+msgstr "lámpa kimenet állapota"
 
 #: frmmain.message46
 msgid "status of the ventilator output"
-msgstr ""
+msgstr "ventilátor kimenet állapota"
 
 #: frmmain.message47
 msgid "status of the heater output"
-msgstr ""
+msgstr "fűtés kimenet állapota"
 
 #: frmmain.message48
 msgid "internal humidity is less than requied"
-msgstr ""
+msgstr "a belső páratartalom kisebb a szükségesnél"
 
 #: frmmain.message49
 msgid "internal humidity is more than requied"
-msgstr ""
+msgstr "a belső páratartalom nagyobb a szükségesnél"
 
 #: frmmain.message50
 msgid "internal temperature is less than requied"
-msgstr ""
+msgstr "a belső hőmérséklet kisebb a szükségesnél"
 
 #: frmmain.message51
 msgid "internal temperature is more than requied"
-msgstr ""
+msgstr "a belső hőmérséklet nagyobb a szükségesnél"
 
 #: frmmain.message52
 msgid "MM17D green LED"
-msgstr ""
+msgstr "MM17D zöld LED"
 
 #: frmmain.message53
 msgid "MM17D yellow LED"
-msgstr ""
+msgstr "MM17D sárga LED"
 
 #: frmmain.message54
 msgid "MM17D red LED"
-msgstr ""
+msgstr "MM17D piros LED"
 
 #: frmmain.message55
 msgid "Cannot run default webbrowser!"
-msgstr ""
+msgstr "Nem tudom futtatni az alapértelmezés szerinti böngészőt!"
 
 #: tform1.button7.caption
 msgid "&Refresh displays"
-msgstr ""
+msgstr "Kijelzők f&rissítése"
 
 #: tform1.caption
 msgid "Form1"
@@ -244,11 +245,11 @@ msgstr ""
 
 #: tform1.checkbox1.caption
 msgid "auto"
-msgstr ""
+msgstr "auto"
 
 #: tform1.checkbox1.hint
 msgid "Automatic device read"
-msgstr ""
+msgstr "Automatikus eszköz olvasás"
 
 #: tform1.combobox1.hint
 msgid "URL"
@@ -256,7 +257,7 @@ msgstr ""
 
 #: tform1.label1.caption
 msgid "Internal relative humidity"
-msgstr ""
+msgstr "Belső relatív páratartalom"
 
 #: tform1.label10.caption
 msgid "MM16D"
@@ -264,23 +265,23 @@ msgstr ""
 
 #: tform1.label11.caption
 msgid "ON"
-msgstr ""
+msgstr "be"
 
 #: tform1.label12.caption
 msgid "ENA"
-msgstr ""
+msgstr "eng."
 
 #: tform1.label13.caption
 msgid "lamp"
-msgstr ""
+msgstr "világítás"
 
 #: tform1.label14.caption
 msgid "fan"
-msgstr ""
+msgstr "ventilátor"
 
 #: tform1.label15.caption
 msgid "heater"
-msgstr ""
+msgstr "fűtés"
 
 #: tform1.label16.caption
 msgctxt "tform1.label16.caption"
@@ -289,7 +290,7 @@ msgstr ""
 
 #: tform1.label17.caption
 msgid "External temperature"
-msgstr ""
+msgstr "Külső hőmérséklet"
 
 #: tform1.label18.caption
 msgctxt "tform1.label18.caption"
@@ -299,23 +300,23 @@ msgstr ""
 #: tform1.label19.caption
 msgctxt "tform1.label19.caption"
 msgid "alarm"
-msgstr ""
+msgstr "alarm"
 
 #: tform1.label2.caption
 msgid "Internal temperature"
-msgstr ""
+msgstr "Belső hőmérséklet"
 
 #: tform1.label20.caption
 msgid "manual"
-msgstr ""
+msgstr "kézi"
 
 #: tform1.label23.caption
 msgid "status"
-msgstr ""
+msgstr "állapot"
 
 #: tform1.label24.caption
 msgid "breaker"
-msgstr ""
+msgstr "védelem"
 
 #: tform1.label25.caption
 msgid "NTP"
@@ -341,7 +342,7 @@ msgstr ""
 
 #: tform1.label7.caption
 msgid "Status reader program for MM16D device"
-msgstr ""
+msgstr "Állapotolvasó program MM16D eszközhöz"
 
 #: tform1.label8.caption
 msgid "(C)2023 Pozsár Zsolt"
@@ -353,24 +354,24 @@ msgstr ""
 
 #: tform1.speedbutton2.hint
 msgid "Add URL to list"
-msgstr ""
+msgstr "URL hozzáadása a listához"
 
 #: tform1.speedbutton3.hint
 msgid "Remove URL from list"
-msgstr ""
+msgstr "URL eltávolítása a listából"
 
 #: tform1.tabsheet1.caption
 msgid "Measured values"
-msgstr ""
+msgstr "Mért értékek"
 
 #: tform1.tabsheet2.caption
 msgid "Summary"
-msgstr ""
+msgstr "Összegzés"
 
 #: tform1.tabsheet3.caption
 msgid "System log"
-msgstr ""
+msgstr "Rendszernapló"
 
 #: tform1.tabsheet4.caption
 msgid "About"
-msgstr ""
+msgstr "&Névjegy"
